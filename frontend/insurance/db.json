@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "1e5d",
+      "name": "Ivan",
+      "lastname": "Ivanov",
+      "email": "ivanov@mail.com",
+      "password": "abc123"
+    },
+    {
+      "id": "0a41",
+      "name": "Ahmed",
+      "lastname": "Tanryverdi",
+      "email": "tanryverdiev08.yandex.ru",
+      "password": "12345"
+    }
+  ]
+}

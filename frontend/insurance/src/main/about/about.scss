@@ -1,0 +1,63 @@
+.about{
+
+    .container{
+        padding: 148px 170px 163px 170px;
+
+        display: flex;
+
+        .left{
+            .about__text{
+                font-family: 'Work Sans';
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 16.8px;
+                color: #F46752;
+            }
+
+            .about__title{
+                margin-top: 27px;
+
+                font-family: 'Work Sans';
+                font-size: 45px;
+                font-weight: 500;
+                line-height: 52px;
+                color: #1d1d1d;
+            }
+
+            .about__description{
+                margin-top: 35px;
+
+                font-family: 'Work Sans';
+                font-size: 19px;
+                font-weight: 400;
+                line-height: 30px;
+                color: #5A6482;
+
+            }
+
+            .about__btn{
+                margin-top: 15px;
+
+                font-family: 'Roboto';
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 21.6px;
+                color: #126F86;
+                border: none;
+                background-color: white;
+
+                &:hover{
+                    cursor: pointer;
+                }
+                &:active{
+                    transform: scale(0.8);
+    
+                    .arrow{
+                        transition: 1s;
+                        margin-left: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
