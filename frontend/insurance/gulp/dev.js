@@ -4,7 +4,6 @@ const notify      = require('gulp-notify');
 const plumber     = require('gulp-plumber');
 const webpack     = require('webpack-stream');
 const babel       = require('gulp-babel');
-const liveServer  = require('gulp-server-livereload');
 const fs          = require('fs');
 const gulpClean   = require('gulp-clean');
 const sassCopy    = require('gulp-sass')(require('sass'));
@@ -76,21 +75,10 @@ function jsdev(){
     .pipe(browserSync.stream())
 }
 
-function serverdev(){
-
-    if(fs.existsSync('./build/')){
-        return gulp.src('build/')
-        .pipe(liveServer({
-            livereload:true,
-            open:true
-        }))
-    }
-}
-
 function browsersyncdev(){
     browserSync.init({
         server: {
-            baseDir: "src/"
+            baseDir: "build/"
         }
     });
 }
@@ -107,7 +95,6 @@ exports.sassdev        = sassdev;
 exports.imagedev       = imagedev;
 exports.jsdev          = jsdev;
 exports.cleandev       = cleandev;
-exports.serverdev      = serverdev;
 exports.watchingdev    = watchingdev;
 exports.browsersyncdev = browsersyncdev;
 

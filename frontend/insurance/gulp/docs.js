@@ -5,9 +5,7 @@ const notify        = require('gulp-notify');
 const plumber       = require('gulp-plumber');
 const webpack       = require('webpack-stream');
 const babel         = require('gulp-babel');
-const liveServer    = require('gulp-server-livereload');
 const fs            = require('fs');
-const gulpClean     = require('gulp-clean');
 const sassCopy      = require('gulp-sass')(require('sass'));
 //const autoprefixer  = require('gulp-autoprefixer');
 const browserSync   = require('browser-sync').create();
@@ -61,16 +59,6 @@ function imagedocs(){
     
 }
 
-function cleandocs(done){
-    
-    if(fs.existsSync('./docs/')){
-        return gulp.src('./docs/', {
-            read: false
-        }).pipe(gulpClean());
-    }
-    done();
-}
-
 function jsdocs(){
     return gulp.src('./src/index.js')
     .pipe(plumber({
@@ -86,21 +74,10 @@ function jsdocs(){
     .pipe(browserSync.stream())
 }
 
-function serverdocs(){
-
-    if(fs.existsSync('./docs/')){
-        return gulp.src('docs/')
-        .pipe(liveServer({
-            livereload:true,
-            open:true
-        }))
-    }
-}
-
 function browsersyncdocs(){
     browserSync.init({
         server: {
-            baseDir: "src/"
+            baseDir: "docs/"
         }
     });
 }
@@ -109,7 +86,5 @@ exports.htmldocs        = htmldocs;
 exports.sassdocs        = sassdocs;
 exports.imagedocs       = imagedocs;
 exports.jsdocs          = jsdocs;
-exports.cleandocs       = cleandocs;
-exports.serverdocs      = serverdocs;
 exports.browsersyncdocs = browsersyncdocs;
 
