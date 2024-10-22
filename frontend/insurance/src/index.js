@@ -1,1 +1,1 @@
-import './js/sendForm.js';
+import './js/form.js';
