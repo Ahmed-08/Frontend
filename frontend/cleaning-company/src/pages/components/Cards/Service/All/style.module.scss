@@ -1,0 +1,98 @@
+.all{
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.content{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+}
+
+.title{
+    font-family: 'Futura PT';
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38.46px;
+    text-align: center;
+    margin-top: 77px;
+    margin-bottom: 20px;
+
+    span{
+        color: #007198;
+    }
+
+}
+.cardBlock{
+    display: flex;
+    gap: 60px;
+}
+
+
+
+.contentCard{
+    width: 560px;
+    height: 256px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+
+    h1{
+        font-family: 'Futura PT';
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 23.08px;
+        text-align: center;
+    }
+
+    &:nth-child(1){
+        background: linear-gradient(119.05deg, rgba(0, 113, 152, 0.6) 51.26%, rgba(252, 183, 139, 0.4) 89.77%, rgba(252, 183, 139, 0.4) 124.01%, rgba(0, 113, 152, 0.6) 163.79%);
+    }
+
+    &:nth-child(2){
+        background: linear-gradient(119.05deg, rgba(0, 113, 152, 0.6) -17.07%, rgba(252, 183, 139, 0.4) 21.44%, rgba(252, 183, 139, 0.4) 55.68%, rgba(0, 113, 152, 0.6) 95.46%);
+    }
+
+    &:nth-child(3){
+        background: linear-gradient(119.05deg, rgba(0, 113, 152, 0.6) 12.21%, rgba(252, 183, 139, 0.4) 50.73%, rgba(252, 183, 139, 0.4) 84.96%, rgba(0, 113, 152, 0.6) 124.75%);
+
+    }
+
+    &:nth-child(4){
+        padding-left: 30px;
+        background: linear-gradient(119.05deg, rgba(0, 113, 152, 0.6) -56.36%, rgba(252, 183, 139, 0.4) -17.84%, rgba(252, 183, 139, 0.4) 16.39%, rgba(0, 113, 152, 0.6) 56.18%);
+    }
+
+
+}
+.cardText{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-family: 'Futura PT';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.08px;
+    text-align: left;
+}
+
+.cardImg{
+    width: 239px;
+    height: 148px;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 15px;
+    img{
+        width: 95px;
+        height: 126px;
+    }
+}

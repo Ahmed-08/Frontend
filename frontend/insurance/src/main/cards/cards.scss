@@ -1,0 +1,96 @@
+.cards{
+
+    .container{
+        .cards__block{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 160px;
+            padding-bottom: 132px;
+
+            .c-1{
+                background-color: lighten($color: #A9D8FF, $amount: 10%);
+                color: #7CAFDD;
+                .card__btn{
+                    color: #7CAFDD;
+                }
+            }
+
+            .c-2{
+                background-color: lighten($color: #ffa368, $amount: 15%);
+                color: #E79751;
+
+                .card__btn{
+                    color: #E79751;
+                }
+            }
+
+            .c-3{
+                background-color: lighten($color: #fa5240, $amount: 15%);
+                color: #FA5240;
+
+                .card__btn{
+                    color: #FA5240;
+                }
+            }
+
+            .c-4{
+                background-color: lighten($color: #126f85, $amount: 15%);
+                color: #126F85;
+
+                .card__btn{
+                    color: #126F85;
+                }
+            }
+
+            .card__item{
+                width: 260px;
+                height: 323px;
+                padding-top: 40px;
+                padding-bottom: 33px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #5A6482;
+
+
+                .card__title{
+                    font-family: 'Work Sans';
+                    font-size: 34px;
+                    font-weight: 600;
+                    line-height: 42px;
+                    flex: 1;
+                }
+
+                .text{
+                    font-family: 'Work Sans';
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.2px;
+                    flex: 1;
+                }
+
+                .card__btn{ 
+                    align-self: flex-start;
+                    border: none;
+                    background-color: inherit;
+                    margin-left: 22px;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+
+                    &:active{
+                        transform: scale(0.8);
+        
+                        .arrow{
+                            transition: 1s;
+                            margin-left: 50%;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

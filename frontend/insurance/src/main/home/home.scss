@@ -1,0 +1,46 @@
+.home{
+
+    .container{
+        display: flex;
+
+        .description{
+            width: 450px;
+            height: 383px;
+            margin-left: 106px;
+            margin-top: 196px;
+
+            .first-text{
+                font-family: 'Work Sans';
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 27px;
+                color: #F46752;
+            }
+
+            .title{
+                font-family: 'Work Sans';
+                font-size: 64px;
+                font-weight: 600;
+                line-height: 68px;
+                color: #1D253C;
+
+            }
+
+            .last-text{
+                font-family: 'Work Sans';
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 33px;
+                color: #5A6482;
+
+            }
+        }
+
+        .home__img{
+            width: 984px;
+            height: 697px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

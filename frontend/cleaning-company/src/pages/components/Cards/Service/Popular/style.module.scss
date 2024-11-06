@@ -1,0 +1,71 @@
+.popular{
+    width: 1920px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin-top: 75px;
+    font-family: 'Futura PT';
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38.46px;
+    text-align: center;
+
+    span{
+        color: #007198;
+    }
+}
+.content__img{
+    width: 1200px;
+    margin-top: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        margin-bottom: 19px;
+    }
+
+    img{
+        width: 373px;
+        height: 250px;
+    }
+}
+
+.popular__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    h1{
+        font-family: 'Futura PT';
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 23.08px;
+        text-align: center;
+    }
+}
+
+.btn__detail{
+    width: 92px;
+    height: 32px;
+    border: 1px solid #F47220;
+    border-radius: 15px;
+    background-color: #fff;
+
+    cursor: pointer;
+
+    &:active{
+        scale: 0.95;
+    }
+}

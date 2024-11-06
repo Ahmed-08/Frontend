@@ -1,0 +1,101 @@
+.home{
+    width: 1920px;
+
+    .container{
+        width: 1290px;
+        height: 648px;
+        margin: 119px 316px 101px 315px;
+
+        .title{
+            font-family: 'Muller';
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: center;
+            color: #2A2651;
+        }
+        .windows{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+
+
+
+            .window{
+
+                .block{
+                    margin-top: 45px;
+                    margin-left: 40px;
+                    color: #fff;
+
+                    .title{
+                        font-family: 'Muller';
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 26px;
+                        text-align: left;
+                        color: #fff;
+                    }
+
+                    .text{
+                        width: 360px;
+                        height: 70px;
+                        margin-top: 20px;
+                        font-family: 'Muller';
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        text-align: left;
+                    }
+
+                    .window__btn{
+                        width: 190px;
+                        height: 46px;
+                        background: #39B6C0;
+                        border: none;
+                        margin-top: 30px;
+                        font-family: 'Muller';
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 16px;
+                        color: #fff;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .window[data-number="1"]{
+                width: 630px;
+                height: 310px;
+                background-image: url('./img/homebg1.png');
+            }
+            
+            .window[data-number="2"]{
+                width: 630px;
+                height: 310px;
+                background-image: url('./img/homebg2.png');
+            }
+            .window[data-number="3"]{
+                width: 408px;
+                height: 228px;
+                background: #218CAD;
+            }
+            .window[data-number="4"]{
+                width: 408px;
+                height: 228px;
+                background: #197299;
+            }
+            .window[data-number="5"]{
+                width: 408px;
+                height: 228px;
+                background: #31A9BA;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.cardsAbout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-top: 145px;
+    
+}
+
+.cardItem{
+    width: 275px;
+    height: 169px;
+    background-color: #DAF1F9;
+    border-radius: 10px;
+    position: relative;
+
+    font-family: 'Futura PT';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.08px;
+    text-align: left;
+    color: #111111;
+    padding-left: 10px;
+
+    h1{
+        font-weight: 600;
+        text-align: center;
+        margin-top: 31px;
+        margin-bottom: 5px;
+    }
+}
+
+.label{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #DAF1F9;
+    top: -25%;
+    left: 30%;
+    box-shadow: 3px 3px 5px 0px #11111140;
+    z-index: 100;
+    img{
+        display: block;
+        margin: 10% auto;
+    }
+}
