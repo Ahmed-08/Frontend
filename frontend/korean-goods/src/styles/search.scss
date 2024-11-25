@@ -1,0 +1,29 @@
+.search{
+    width: 624px;
+    height: 46px;
+    margin-left: 31px;
+    background-color: #fff;
+    border: 2px solid transparent;
+    background: linear-gradient(96.78deg, #F64D4D -57.09%, #4D5EF6 101.17%);
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    input{
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        padding-left: 15px;
+        font-size: 130%;
+        font-family: 'Roboto';
+        padding-right: 65px;
+    }
+    img{
+        width: 27px;
+        height: 26px;
+        right: 23px;
+        position: absolute;
+    }
+}

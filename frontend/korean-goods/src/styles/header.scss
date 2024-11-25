@@ -1,0 +1,55 @@
+@mixin flex(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header{
+    width: 1366px;
+    height: 134px;
+    position: relative;
+
+    .container{
+        display: flex;
+        align-items: center;
+        padding-left: 43px;
+        padding-right: 33px;
+
+        .logo{
+            width: 188px;
+            height: 63px;
+            margin-left: 152px;
+        }
+    }
+
+    .exit{
+        margin-left: 45px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .auth{
+        width: 40px;
+        height: 47px;
+        margin-left: 45px;
+        @include flex;
+        
+    }
+
+    .favourites{
+        width: 72px;
+        height: 49px;
+        margin-left: 50px;
+        @include flex;
+    }
+
+    .shopCart{
+        width: 56px;
+        height: 49px;
+        margin-left: 50px;
+        @include flex;
+    }
+
+}

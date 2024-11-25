@@ -1,0 +1,13 @@
+.favourites__page{
+    width: 1366px;
+    margin: 0 auto;
+    .container{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}

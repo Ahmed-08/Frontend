@@ -1,0 +1,26 @@
+.button{
+    width: 77px;
+    height: 77px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(96.78deg, #F64D4D -57.09%, #4D5EF6 101.17%);
+    position: absolute;
+    top: 39px;
+    left: 43px;
+}
+
+.block{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.layer{
+    height: 3px;
+    background-color: #fff;
+}

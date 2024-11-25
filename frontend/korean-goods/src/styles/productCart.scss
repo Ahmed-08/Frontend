@@ -1,0 +1,116 @@
+.product{
+
+    margin-top: 20px;
+    .container{
+        width: 220px;
+        height: 426px;
+        position: relative;
+        .content{
+            width: 180.5px;
+            height: 270.25px;
+            display: flex;
+            flex-direction: column;      
+            gap: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            position: relative;
+            transition: 1s;
+
+            img{
+                width: 160px;
+                height: 160px;
+            }
+
+            .price-block{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .price{
+                font-family: 'Roboto';
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16.41px;
+                text-align: left;
+                color: green;
+            }
+
+            .rating{
+                display: none;
+                align-items: center;
+                gap: 5px;
+                .star{
+                    width: 16px;
+                    height: 16px;
+                }
+
+            }
+
+            .text{
+
+                .title{
+                    width: 55px;
+                    height: 16px;
+                    display: none;
+                    font-family: 'Roboto';
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16.41px;
+                    text-align: left;
+                    margin-bottom: 10px;
+                }
+
+                .description{
+                    font-family: 'Roboto';
+                    font-size: 12px;
+                    font-weight: 300;
+                    line-height: 14.9px;
+                    text-align: left;
+                    text-align: justify;
+                }
+            }
+
+            .toCart{
+                width: 180px;
+                height: 34px;
+                border: none;
+                background: linear-gradient(96.78deg, #F64D4D -57.09%, #4D5EF6 101.17%);
+                box-shadow: 0px 0px 40px 0px #0000001F;
+                position: absolute;
+                color: #fff;
+                bottom: 0;
+                display: none;
+            }
+        }
+
+        &:hover{
+            width: 220px;
+            height: 426px;
+            box-shadow: 0px 4px 40px 0px #00000059;
+
+            .content{
+                width: 100%;
+                height: 100%;
+                position: static;
+                transition: 1s;
+                .rating{
+                    display: flex;
+                }
+
+                .title{
+                    display: inline-block;
+                }
+
+                img{
+                    width: 180px;
+                    height: 180px;
+                }
+    
+                .toCart{
+                    display: inline-block;
+                    bottom: 24px;
+                }
+            }
+        }
+    }
+}

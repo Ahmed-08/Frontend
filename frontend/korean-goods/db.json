@@ -1,0 +1,110 @@
+{
+  "users": [
+    {
+      "email": "tanryverdiev08@yandex.ru",
+      "password": "$2a$10$z/X/ELTn6ZZktVTr68hxVOPfsN0KCxp/Dg6zkqMIR4h3HKzvANDgK",
+      "login": "ahmed",
+      "id": 3
+    },
+    {
+      "email": "anar@mail.ru",
+      "password": "$2a$10$tSt3GuEbUVlOU4lX350UFucusRRnueODmXmMhfd35HLqU6KMOuG1C",
+      "login": "anar",
+      "id": 4
+    },
+    {
+      "email": "ruslan@gmail.ru",
+      "password": "$2a$10$MZdCEpKLMPwppTgum9wBMOaf.sF7VeTrF2/IEwQzO0fW7y7lFfbIK",
+      "login": "ruslan",
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "price": 1999,
+      "description": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
+      "rating": 4.9,
+      "img": "boy1.svg"
+    },
+    {
+      "id": 2,
+      "price": 3179,
+      "description": "Футболка 80 с дизайнерским принтом Super Shape 0201 абстракция на фиолетовом фоне",
+      "rating": 4.9,
+      "img": "boy2.svg"
+    },
+    {
+      "id": 3,
+      "price": 1375,
+      "description": "Бейсболка с дизайнерским принтом Super Shape 01 белая",
+      "rating": 4.7,
+      "img": "hat1.svg"
+    },
+    {
+      "id": 4,
+      "price": 599,
+      "description": "Чехол для iphone 12 с дизайнерским принтом Super Shape 03",
+      "rating": 4.5,
+      "img": "phone1.svg"
+    },
+    {
+      "id": 5,
+      "price": 599,
+      "description": "Чехол для iphone 12 с дизайнерским принтом Super Shape 05",
+      "rating": 4.6,
+      "img": "phone2.svg"
+    },
+    {
+      "id": 6,
+      "price": 2399,
+      "description": "Футболка с дизайнерским принтом Super Shape 06 абстракция",
+      "rating": 4.8,
+      "img": "boy3.svg"
+    },
+    {
+      "id": 7,
+      "price": 1375,
+      "description": "Бейсболка с дизайнерским принтом Super Shape 02 абстракция",
+      "rating": 4.8,
+      "img": "hat2.svg"
+    },
+
+    {
+      "id": 8,
+      "price": 599,
+      "description": "Чехол для iphone 12 с дизайнерским принтом Super Shape 03",
+      "rating": 4.5,
+      "img": "phone2.svg"
+    },
+    {
+      "id": 9,
+      "price": 599,
+      "description": "Чехол для iphone 12 с дизайнерским принтом Super Shape 02",
+      "rating": 4.5,
+      "img": "phone131.svg"
+    },
+    {
+      "id": 10,
+      "price": 3179,
+      "description": "Футболка с дизайнерским принтом Super Shape 02 фиолетовая",
+      "rating": 4.6,
+      "img": "boy5.svg"
+    },
+    {
+      "id": 11,
+      "price": 599,
+      "description": "Чехол для iphone 12 с дизайнерским принтом Super Shape 06",
+      "rating": 4.5,
+      "img": "phone4.svg"
+    },
+    {
+      "id": 12,
+      "price": 2399,
+      "description": "Футболка с дизайнерским принтом Super Shape 06 абстракция",
+      "rating": 4.8,
+      "img": "boy6.svg"
+    }
+  ]
+
+}
