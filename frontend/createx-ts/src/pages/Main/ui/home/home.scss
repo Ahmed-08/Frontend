@@ -1,0 +1,136 @@
+.home{
+    width: 1920px;
+    height: 1080px;
+    background-color: #FEDDD1;
+    border: 1px solid transparent;
+}
+
+.shapes{
+    position: absolute;
+}
+
+.illustration{
+    position: absolute;
+    z-index: 100;
+    top: 100px;
+
+    width: 602px;
+    height: 551px;
+    top: 200px;
+    left: 1020px;
+}
+
+.play{
+    width: 175px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 212px;
+    left: 329px;
+
+    .btn-play{
+        width: 84px;
+        height: 52px;
+
+        button{
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+            border: none;
+            outline: none;
+            box-shadow: 0 0 25px 5px #FF3F3A;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 100;
+            
+            span{
+                border: 10px solid transparent;
+                border-left: 15px solid #fff;
+                margin-left: 13px;
+            }
+        }
+    } 
+
+    p{
+        font-family: 'Lato';
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        text-align: left;
+    }
+}  
+
+.title{
+    width: 496px;
+    height: 249px;
+    margin-top: 320px;
+    margin-left: 344px;
+    color: #1E212C;
+
+    font-family: 'Lato';
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 83.2px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.home__btns{
+    width: 350px;
+    position: relative;
+    left: 344px;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+}
+
+.home-bottom{
+    width: 1900px;
+    height: 60px;
+    position: relative;
+    top: 342px;
+    left: 345px;
+
+    display: flex;
+    column-gap: 74px;
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 12px;
+
+        &:not(:last-child)::after{
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: #FF3F3A;
+            border-radius: 50%;
+            margin-left: 66px;
+        }
+
+        p:first-child{
+            font-family: 'Lato';
+            font-size: 46px;
+            font-weight: 900;
+            line-height: 59.8px;
+            text-align: center;
+            color: #424551;
+        }
+
+        p:last-child{
+            font-family: 'Lato' serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25.6px;
+            text-align: left;
+        }
+    }
+}

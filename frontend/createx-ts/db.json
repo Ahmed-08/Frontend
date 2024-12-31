@@ -1,0 +1,221 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "category": "Marketing",
+      "title": "The Ultimate Google Ads Training Course",
+      "price": 100,
+      "teacher": "Jerome Bell",
+      "image": "image2.png"
+    },
+    {
+      "id": 2,
+      "category": "Management",
+      "title": "Prduct Management Fundamentals",
+      "price": 480,
+      "teacher": "Marvin McKinney",
+      "image": "image3.png"
+    },
+    {
+      "id": 3,
+      "category": "HR_Recruting",
+      "title": "HR  Management and Analytics",
+      "price": 200,
+      "teacher": "Leslie Alexander Li",
+      "image": "image4.png"
+    },
+    {
+      "id": 4,
+      "category": "Marketing",
+      "title": "Brand Management & PR Communications",
+      "price": 530,
+      "teacher": "Kristin Watson",
+      "image": "image5.png"
+    },
+    {
+      "id": 5,
+      "category": "Design",
+      "title": "Business Development Management",
+      "price": 530,
+      "teacher": "Dianne Russell",
+      "image": "image1.png"
+    },
+    {
+      "id": 6,
+      "category": "Management",
+      "title": "Graphic Design Basic",
+      "price": 500,
+      "teacher": "Guy Hawkins",
+      "image": "image6.png"
+    },
+    {
+      "id": 7,
+      "category": "Development",
+      "title": "Highload Software Architecture",
+      "price": 600,
+      "teacher": "by Brooklyn Simmons",
+      "image": "image8.png"
+    },
+    {
+      "id": 8,
+      "category": "HR_Recruting",
+      "title": "Human Resources – Selection and Recruitment",
+      "price": 150,
+      "teacher": "Kathryn Murphy",
+      "image": "image7.png"
+    },
+    {
+      "id": 9,
+      "category": "Design",
+      "title": "User Experience. Human-centered Design",
+      "price": 240,
+      "teacher": "Cody Fisher",
+      "image": "image9.png"
+    },
+    {
+      "id": 10,
+      "category": "Design",
+      "title": "User Experience. Human-centered Design",
+      "price": 240,
+      "teacher": "Cody Fisher",
+      "image": "image9.png"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "topic": "Formation of the organizational structure of the company in the face of uncertainty.",
+      "category": "Onine master-class",
+      "month": "August",
+      "day": 5,
+      "time": "11:00 – 14:00",
+      "themes": [
+        "Aliquet lectus urna viverra in odio.",
+        "Orci commodo, viverra orci mollis ut euismod.",
+        "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+        "In id dolor quis nunc, urna hendrerit pharetra."
+      ]
+    },
+    {
+      "id": 2,
+      "topic": "Building a customer service department. Best Practices.",
+      "category": "Onine lecture",
+      "month": "July",
+      "day": 24,
+      "time": "11:00 – 12:30",
+      "themes": [
+        "Aliquet lectus urna viverra in odio.",
+        "Orci commodo, viverra orci mollis ut euismod.",
+        "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+        "In id dolor quis nunc, urna hendrerit pharetra."
+      ]
+    },
+    {
+      "id": 3,
+      "topic": "How to apply methods of speculative design in practice. Worldbuilding prototyping.",
+      "category": "Onine workshop",
+      "month": "July",
+      "day": 16,
+      "time": "10:00 – 13:00",
+      "themes": [
+        "Aliquet lectus urna viverra in odio.",
+        "Orci commodo, viverra orci mollis ut euismod.",
+        "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+        "In id dolor quis nunc, urna hendrerit pharetra."
+      ]
+    },
+    {
+      "id": 4,
+      "topic": "Find and evaluate: search and assessment tools for candidates.",
+      "category": "Onine workshop",
+      "month": "August",
+      "day": 10,
+      "time": "9:00 – 14:00",
+      "themes": [
+        "Aliquet lectus urna viverra in odio.",
+        "Orci commodo, viverra orci mollis ut euismod.",
+        "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+        "In id dolor quis nunc, urna hendrerit pharetra."
+      ]
+    },
+    {
+      "id": 5,
+      "topic": "Connection to Microsoft Excel and Google Sheets, Data Visualization in Power BI.",
+      "category": "Onine master-class",
+      "month": "July",
+      "day": 27,
+      "time": "15:00 – 19:00",
+      "themes": [
+        "Aliquet lectus urna viverra in odio.",
+        "Orci commodo, viverra orci mollis ut euismod.",
+        "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+        "In id dolor quis nunc, urna hendrerit pharetra."
+      ]
+    },
+    {
+      "id": 6,
+      "topic": "Marketing or growth hacking: main differences and what business needs.",
+      "category": "Onine lecture",
+      "month": "June",
+      "day": 15,
+      "time": "10:00 – 12:00",
+      "themes": [
+        "Aliquet lectus urna viverra in odio.",
+        "Orci commodo, viverra orci mollis ut euismod.",
+        "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+        "In id dolor quis nunc, urna hendrerit pharetra."
+      ]
+    },
+    {
+      "id": 7,
+      "topic": "How to brief a client and present your design to approve it from the first show.",
+      "category": "Onine lecture",
+      "month": "June",
+      "day": 2,
+      "time": "11:00 – 13:00",
+      "themes": [
+        "Aliquet lectus urna viverra in odio.",
+        "Orci commodo, viverra orci mollis ut euismod.",
+        "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+        "In id dolor quis nunc, urna hendrerit pharetra."
+      ]
+    },
+    {
+      "id": 8,
+      "topic": "Who is a project manager and do I want to be PM?",
+      "category": "Onine lecture",
+      "month": "May",
+      "day": 29,
+      "time": "11:00 – 12:00",
+      "themes": [
+        "Aliquet lectus urna viverra in odio.",
+        "Orci commodo, viverra orci mollis ut euismod.",
+        "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+        "In id dolor quis nunc, urna hendrerit pharetra."
+      ]
+    },
+    {
+      "id": 9,
+      "topic": "The company's business page as an additional tool to support the announcement of vacancies.",
+      "category": "Onine lecture",
+      "month": "May",
+      "day": 18,
+      "time": "10:00 – 12:00",
+      "themes": [
+        "Aliquet lectus urna viverra in odio.",
+        "Orci commodo, viverra orci mollis ut euismod.",
+        "Sagittis vitae facilisi rutrum amet mauris quisque vel.",
+        "In id dolor quis nunc, urna hendrerit pharetra."
+      ]
+    }
+  ],
+  "users": [
+    {
+      "email": "tanriverdiev.08@yandex.ru",
+      "password": "$2a$10$4iyVZNFoF4rHNjX5JWDZSOphXM.i5wGdkny/4.xm3mrQcR9/XFUj.",
+      "fullName": "AhmedTanryverdi",
+      "checkbox": true,
+      "id": 1
+    }
+  ]
+}

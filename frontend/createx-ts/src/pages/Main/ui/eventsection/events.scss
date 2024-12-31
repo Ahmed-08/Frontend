@@ -1,0 +1,39 @@
+.events-section{
+    width: 1920px;
+    background-color: #FEDBD3;
+    margin-top: 20px;
+}
+
+.events-section__wrapper{
+    width: 1230px;
+    margin: 0 auto;
+    padding: 80px 345px 80px 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 24px;
+
+    font-family: 'Lato';
+    text-align: left;
+}
+
+.events-section__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 46px;
+        font-weight: 900;
+        line-height: 59.8px;
+    }
+}
