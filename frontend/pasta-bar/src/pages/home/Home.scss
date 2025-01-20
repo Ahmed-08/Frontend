@@ -1,0 +1,169 @@
+.products{
+    width: 1549px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+
+
+        .products__content{
+            display: flex;
+            flex-direction: column;
+            row-gap: 26px;
+
+            .title_category{
+                font-family: 'Montserrat' serif;
+                font-size: 32px;
+                font-weight: 800;
+                line-height: 39.01px;
+                text-align: left;
+                color: #F7D22D;
+                margin-top: 46px;
+            }
+
+            .carts{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 48px 34px;
+            }
+        }
+    }
+}
+
+.actions{
+    width: 1549px;
+
+    .container{
+        width: 100%;
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            row-gap: 47px;
+            justify-content: center;
+            align-items: center;
+
+            .title{
+                margin-top: 64px;
+                font-family: 'Montserrat' serif;
+                font-size: 44px;
+                font-weight: 800;
+                line-height: 53.64px;
+                color: #F7D22D;
+
+                span{
+                    color: #000;
+                }
+            }
+
+            .actions__block{
+                display: grid;
+                grid-template-columns: 541px 256px 256px;
+                column-gap: 29px;
+                row-gap: 27px;
+
+                .item{
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    &:first-child{
+                        grid-row-start: 1;
+                        grid-row-end: 3;
+                    }
+                }
+            }
+
+            .actions__btn{
+                width: 160px;
+                height: 48px;
+                background-color: #F7D22D;
+                border-radius: 10px;
+                border: none;
+
+                font-family: 'Montserrat' serif;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 28px;
+                color: #fff;
+
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.maps{
+    width: 1549px;
+    margin-top: 62px;
+
+    .container{
+        width: 100%;
+        height: 688px;
+        background-color: #E3ECF5;
+        display: flex;
+        justify-content: center;
+        
+        
+        .maps__content{
+
+
+            .title{
+                margin-top: 56px;
+                font-family: 'Montserrat' serif;
+                font-size: 30px;
+                font-weight: 800;
+                line-height: 36.57px;
+                text-align: center;
+                color: #F7D22D;
+            }
+
+            .map__blocks{
+                display: flex;
+                column-gap: 30px;
+                margin-top: 63px;
+
+                .block{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 255px;
+                    height: 104px;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    text-align: center;
+
+                    .iconmap{
+                        width: 77px;
+                        height: 77px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: -50px;
+    
+                        img{
+                            
+                            width: 44px;
+                            height: 44px;
+                        }
+                    }
+    
+                }
+            }
+
+            .map{
+                margin-top: 32px;
+                width: 1110px;
+                height: 322px;
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@mixin fonts(){
+    font-family: 'Montserrat' serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+@mixin flex-center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    width: 1549px;
+
+    .container{
+        width: 100%;
+        padding: 80px 220px 60px 220px;
+        .content{
+            width: 1110px;
+            display: flex;
+            column-gap: 207px;
+
+            .left{
+
+                .logo{
+                    width: 90px;
+                    height: 66.52px;
+                    margin-bottom: 33px;
+                }
+                
+                .line-1{
+                    display: flex;
+                    column-gap: 52px;
+                    margin-bottom: 23px;
+
+                    p{
+                        @include fonts();
+                        color: #0E0C0D;
+                    }
+                }
+
+                .line-2{
+                    @include fonts();
+                    margin-bottom: 15px;
+                }
+
+                .line-3{
+                    display: flex;
+                    column-gap: 103px;
+
+                    .network{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 9px;
+                        @include fonts();
+                        
+                        a{
+                            color: #0E0C0D;
+                        }
+
+                    }
+                }
+            }
+
+            .right{
+                display: flex;
+                flex-direction: column;
+                row-gap: 33px;
+
+                .networks{
+                    @include flex-center();
+                    flex-wrap: wrap;
+                    gap: 35px 14px;
+                    justify-content: flex-start;
+                }
+                .item{
+                    width: 101px;
+                    height: 52px;
+                    border: 2px solid #E3ECF5;
+                    border-radius: 10px;
+                    @include flex-center();
+                }
+
+                .btn{
+                    width: 216px;
+                    height: 52px;
+                    border: 2px solid #E3ECF5;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

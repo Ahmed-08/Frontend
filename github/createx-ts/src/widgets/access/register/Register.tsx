@@ -2,61 +2,79 @@ import React from 'react';
 import { Button } from '../../../shared/components/index.ts';
 import { useSelector } from 'react-redux';
 import { RootState, useAppDispatch } from '../../../app/stories/store.ts';
-import { getAccess, setCheckbox, setLogin } from '../../../features/model/slices/accessSlice.ts';
+import { getAccess, setCheckbox, setRegister } from '../../../features/model/slices/accessSlice.ts';
 import { useForm } from 'react-hook-form';
 import { IoClose } from "react-icons/io5";
 import { InputsType } from '../../../shared/types.ts';
-import './login.scss';
+import './register.scss';
 
 
-export const Login: React.FC = ()=>{
+export const Register: React.FC = ()=>{
 
-  const isLogin = useSelector<RootState>(state=>state.access.isLogin);
+  const isRegister = useSelector<RootState>(state=>state.access.isRegister);
   const dispatch = useAppDispatch();
   const handleClick = (e)=>{
     e.stopPropagation();
     if(e.target.className === e.currentTarget.className){
-        dispatch(setLogin());
+        dispatch(setRegister());
     }
   }
+
+  const checkboxRef = React.useRef<HTMLInputElement>(null);
 
     const {
     register,
     handleSubmit,
-    reset,
     formState: {
         errors
     }
   } = useForm<InputsType>({mode: 'onBlur'});
 
-  const checkboxRef = React.useRef<HTMLInputElement>(null);
-
-
   const onSubmitForm = (data)=>{
     dispatch(setCheckbox(checkboxRef.current?.checked));
-    dispatch(getAccess({url: 'http://localhost:8000/login', data: {...data}}));
-    reset({
-        email: '',
-        password: ''
-    })
+    dispatch(getAccess({url: 'http://localhost:8000/register', data: {...data}}));
   }
 
   return (
-    <div className='popupLogin' style={{display: `${isLogin? 'flex': 'none'}`}} onClick={(e)=>handleClick(e)}>
-        <form className="loginForm" onSubmit={handleSubmit(onSubmitForm)}>
+    <div className='popupRegister' style={{display: `${isRegister? 'flex': 'none'}`}} onClick={(e)=>handleClick(e)}>
+        <form className="registerForm" onSubmit={handleSubmit(onSubmitForm)}>
             <div className="container">
-                <header className="login__header">
-                    <legend className='login__header_title'>Sign in</legend>
-                    <p className='login__header_text'>Sign in to your account using email and password provided during registration.</p>
+                <header className="registerForm__header">
+                    <legend className='registerForm__header_title'>Sign up</legend>
+                    <p className='registerForm__header_text'>Registration takes less than a minute but gives you full control over your studying.</p>
                 </header>
 
-                <div className="loginForm__body">
-                    <label htmlFor="email">
+                <div className="registerForm__body">
+
+                    <label htmlFor="fullName">
+                        <p>Full Name</p>
+                        <input
+                            type="text"
+                            className='input'
+                            id='FullName'
+
+                            {...register('fullName', {
+                                required: {
+                                    message: 'введите имя',
+                                    value: true
+                                },
+                                minLength: {
+                                    message: 'введите не менее 6-ти символов',
+                                    value: 6
+                                }
+                            })}
+                            style={errors.fullName && {border: '1px solid red'}}
+                            placeholder='Your full name'
+                        />
+                        <span className='form__error'>{errors.fullName && errors.fullName.message}</span>
+                    </label>
+
+                    <label htmlFor="register__email">
                         <p>Email</p>
                         <input
                             type="email"
                             className='input'
-                            id='email'
+                            id='register__email'
 
                             {...register('email', {
                                 required: {
@@ -84,7 +102,7 @@ export const Login: React.FC = ()=>{
                         <input
                             type="password"
                             className='input'
-                            id='password'                           
+                            id='register__password'                           
 
                             {...register('password', {
                                 required: {
@@ -102,20 +120,20 @@ export const Login: React.FC = ()=>{
                         <span className='form__error'>{errors.password && errors.password.message}</span>
                     </label>
 
-                    <div className="checkbox">
-                        <label htmlFor="checkbox">
-                            <input type="checkbox" ref={checkboxRef} id='checkbox' name='checkbox'/>
-                            <p>Keep me signed in</p>
+                    <div className="register__checkbox">
+                        <label htmlFor="register__checkbox">
+                            <input 
+                                type="checkbox" 
+                                id='register__checkbox'
+                                ref={checkboxRef}
+                            />
+                            <p>Remember me</p>
                         </label>
                         <p className='fpswd'>Forgot password?</p>
                     </div>
 
-                    <div className="loginForm__btn">
-                        <Button 
-                            text='Sign in'
-                            className='btn-type-1'
-                            width='390px'
-                        />
+                    <div className="registerForm__btn">
+                        <Button text='Sign up' className='btn-type-1' width='390px'/>
                     </div>
 
                 </div>
@@ -129,7 +147,7 @@ export const Login: React.FC = ()=>{
                         color: '#fff',
                         borderRadius: '5px'
                     }}
-                    onClick={()=>dispatch(setLogin())}
+                    onClick={()=>dispatch(setRegister())}
                 />
             </div>
         </form>
