@@ -23,6 +23,7 @@ export const Login: React.FC = ()=>{
     const {
     register,
     handleSubmit,
+    reset,
     formState: {
         errors
     }
@@ -34,6 +35,10 @@ export const Login: React.FC = ()=>{
   const onSubmitForm = (data)=>{
     dispatch(setCheckbox(checkboxRef.current?.checked));
     dispatch(getAccess({url: 'http://localhost:8000/login', data: {...data}}));
+    reset({
+        email: '',
+        password: ''
+    })
   }
 
   return (
@@ -106,7 +111,11 @@ export const Login: React.FC = ()=>{
                     </div>
 
                     <div className="loginForm__btn">
-                        <Button text='Sign in' className='btn-type-1' width='390px'/>
+                        <Button 
+                            text='Sign in'
+                            className='btn-type-1'
+                            width='390px'
+                        />
                     </div>
 
                 </div>

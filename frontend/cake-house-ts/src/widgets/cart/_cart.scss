@@ -1,0 +1,50 @@
+@use "../../shared/styles/global";
+
+.cart {
+	width: 280px;
+	position: relative;
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		row-gap: 3%;
+
+		p {
+			text-align: center;
+		}
+		img {
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+		.cart__btn {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			column-gap: 4%;
+			position: absolute;
+			bottom: -60px;
+
+			.cart__cart {
+				cursor: pointer;
+				transition: 0.5;
+				&:active{
+					scale: 0.9;
+				}
+			}
+
+			.btn {
+				padding: 5% 10% 5% 10%;
+				color: rgba(6, 4, 138, 0.685);
+				border: 1px solid rgba(6, 4, 138, 0.685);
+				transition: 0.3s;
+				cursor: pointer;
+
+				&:hover {
+					background-color: rgba(6, 4, 138, 0.685);
+					color: var(--baseColorLight);
+				}
+			}
+		}
+	}
+}

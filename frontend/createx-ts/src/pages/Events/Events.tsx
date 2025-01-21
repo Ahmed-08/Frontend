@@ -16,7 +16,6 @@ export const Events: React.FC = ()=>{
   const show: number = useSelector<RootState, number>(state=>state.filter.show);
   const start = useSelector<RootState, number>(state=>state.filter.start);
 
-  console.log('events')
   return (
     <main className='events'>
         <div className="container">
