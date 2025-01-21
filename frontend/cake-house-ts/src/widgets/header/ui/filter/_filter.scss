@@ -1,0 +1,78 @@
+@use "../../../../shared/styles/global";
+
+@mixin justify-center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.filter {
+	
+	.filter__search {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 50%;
+		padding: 1% 5% 1% 5%;
+
+		a {
+			img {
+				width: 152px;
+				height: 90px;
+			}
+		}
+
+		.filter__search-number {
+			margin-left: 25%;
+			font-size: 24px;
+			font-weight: 300;
+			font-family: "Open Sans", sans-serif;
+		}
+
+		.filter__search-search {
+			width: 35%;
+			height: 40px;
+			border-radius: 15px;
+			border: 1px solid grey;
+			@include justify-center;
+            flex-shrink: 2;
+
+			.filter__search-input {
+				outline: none;
+				border: none;
+				width: 90%;
+				height: 100%;
+				border-radius: 14px;
+				font-size: 18px;
+			}
+
+		}
+
+		.filter__search-cart {
+			display: flex;
+            flex-basis: 10%;
+            justify-content: center;
+            align-items: center;
+			column-gap: 5px;
+            flex-shrink: 2;
+			span{
+				margin-top: -5px;
+			}
+		}
+	}
+
+	.filter__category {
+		padding: 1% 5% 1% 5%;
+		padding-bottom: 2%;
+		background-color: rgb(33, 51, 87);
+
+		a {
+			color: var(--baseColorLight);
+			font-size: 16px;
+			margin-right: 2%;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

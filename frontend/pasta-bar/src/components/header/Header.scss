@@ -1,0 +1,155 @@
+@mixin flex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    width: 1549px;
+    
+    .container{
+        width: 100%;
+        padding: 19px 220px 25px 220px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+
+        div:first-child{
+            display: flex;
+        }
+
+        .city{
+            width: 383px;
+            margin-left: 52px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 9px;
+
+
+            .roof{
+                p:first-child{
+                    font-family: 'Montserrat' serif;
+                    font-size: 17px;
+                    font-weight: 600;
+                    line-height: 20.72px;
+                    text-align: left;
+                }
+            }
+            
+            .floor{
+
+                .time::after{
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    background-color: red;
+                    border-radius: 50%;
+                }
+                
+                height: 20px;
+                display: flex;
+                align-items: center;
+                column-gap: 7px;
+
+                .rating{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 7px;
+
+                    font-family: 'Montserrat' serif;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 15.85px;
+                    text-align: left;
+
+                    .yandex::after{
+                        content: '';
+                        width: 10px;
+                        height: 10px;
+                        background-color: red;
+                    }
+                }
+
+                .time{
+
+                    font-family: 'Montserrat' serif;
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 15.85px;
+                    text-align: left;
+                }
+            }
+        }
+
+        .phone-call{
+            display: flex;
+            column-gap: 28px;
+
+            .call-btn{
+                width: 180px;
+                height: 42px;
+                border-radius: 28px;
+
+                font-family: 'Montserrat' serif;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 28px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .number{
+                font-family: 'Montserrat' serif;
+                font-size: 26px;
+                font-weight: 700;
+                line-height: 31.69px;
+                text-align: left;
+                color: #F7D22D;
+            }
+        }
+
+        .header__nav{
+            display: flex;
+            column-gap: 30px;
+
+            .login{
+                font-family: 'Montserrat' serif;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 28px;
+                text-align: left;
+                color: #696F7A;
+            }
+
+            .cart-btn{
+                width: 160px;
+                height: 42px;
+                background-color: #F7D22D;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+
+                font-family: 'Montserrat' serif;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 28px;
+            }
+        }
+
+        .nav__list{
+            display: flex;
+            column-gap: 20px;
+            a{
+                
+                font-family: 'Montserrat' serif;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 18.29px;
+                text-align: left;
+                color: #0E0C0D;
+            }
+        }
+
+
+    }
+}

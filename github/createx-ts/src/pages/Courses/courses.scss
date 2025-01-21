@@ -1,0 +1,39 @@
+.courses{
+    width: 1920px;
+    .courses__title-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        padding-top: 20px;
+        color: #1E212C;
+
+
+        p{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 1px;
+        }
+
+        .courses__title{
+            font-size: 46px;
+            font-weight: 900;
+            line-height: 59.8px;
+        }
+    }
+
+    .courses__main{
+        .courseList{
+            padding: 60px 345px 60px 345px;
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 30px;
+            column-gap: 30px;  
+            justify-content: center;
+            align-items: center;          
+        }
+    }
+}

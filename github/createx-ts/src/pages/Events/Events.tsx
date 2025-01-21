@@ -8,13 +8,14 @@ import { Pagination } from '../../shared/components/index.ts';
 import { Link } from 'react-router-dom';
 import './events.scss';
 
-
+const show = 1;
 export const Events: React.FC = ()=>{
 
+  console.log('events')
   const eventsData: EventDataType[] = useSelector<RootState, EventDataType[]>(state=>state.events.events);
   const view: number = useSelector<RootState, number>(state=>state.filter.view);
-  const show: number = useSelector<RootState, number>(state=>state.filter.show);
-  const start = useSelector<RootState, number>(state=>state.filter.start);
+  //const show: number = useSelector<RootState, number>(state=>state.filter.show);
+  const start: number = useSelector<RootState, number>(state=>state.filter.start);
 
   return (
     <main className='events'>
@@ -25,6 +26,7 @@ export const Events: React.FC = ()=>{
                 <p>Our Events</p>
                 <h1>Lectures, workshops & master-classes</h1>
                 <EventFilter show={show}/>
+
               </div>
 
               <section className={`events-block-${view}`}>

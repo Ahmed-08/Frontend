@@ -1,0 +1,116 @@
+.popupLogin{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    justify-content: center;
+    align-items: center;
+
+    .loginForm{
+        width: 486px;
+        height: 580px;
+        background-color: #fff;
+        color: #000;
+        padding: 48px 48px 48px 24px;
+        display: flex;
+        border-radius: 5px;
+        position: relative;
+
+        .login__header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 24px;
+            
+
+            font-family: 'Lato';
+            text-align: center;
+
+            .login__header_title{
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 42px;
+                color: #1E212C;
+            }
+
+            .login__header_text{
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                color: #787A80;
+            }
+        }
+
+        .loginForm__body{
+            margin-top: 24px;
+
+            font-family: 'Lato' serif;
+            label{
+
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+
+                &:first-child{
+                    margin-bottom: 35px;
+                }
+                
+                .input{
+                    width: 100%;
+                    height: 44px;
+                    border: 1px solid #D7DADD;
+                    outline: none;
+                    padding: 12px 0 12px 16px;
+                    border-radius: 5px;
+                }
+
+                p{
+                    margin-bottom: 8px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    text-align: left;
+                }
+            }
+
+            .checkbox{
+                width: 100%;
+                height: 21px;
+                margin-top: 20px;
+                margin-bottom: 24px;
+
+                display: flex;
+                justify-content: space-between;
+
+                .fpswd{
+                    color: #FF3F3A;
+                }
+
+                label{
+                    width: 138px;
+                    height: 21px;
+                    flex-direction: row;
+                    column-gap: 8px;
+                }
+
+                #input{
+                    width: 10px;
+                    height: 8px;
+                }
+                input[type="checkbox"]{
+                    accent-color: #FF3F3A;
+                }
+            }
+
+            .loginForm__btn{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
